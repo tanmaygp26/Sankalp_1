@@ -78,7 +78,10 @@ button {
     color: var(--text-main);
     transition: background-color 0.2s;
 }
+#dot:hover{
+    background-color:#f0d6b8;
 
+}
 button:hover {
     background-color: var(--btn-hover);
 }
@@ -154,7 +157,7 @@ button:hover {
 }
 
 .history-result {
-    color: var(--text-main);
+    color:rgb(112, 231, 112);
     font-weight: bold;
     font-size: 1.1rem;
 }

@@ -83,6 +83,7 @@ function calculate(addToHistoryFlag = true) {
 }
 
 function addToHistory(expression, result) {
+
     const li = document.createElement('li');
     li.classList.add('history-item');
     li.innerHTML = `

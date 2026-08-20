@@ -1,3 +1,117 @@
+
+:root {
+    --bg-color: #f4f4f9;
+    --calc-bg: #ffffff;
+    --text-main: #333333;
+    --text-muted: #888888;
+    --btn-bg: #f0f0f0;
+    --btn-hover: #e0e0e0;
+    --btn-accent: #4a90e2;
+    --btn-accent-hover: #357abd;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    background: var(--calc-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow);
+    max-height: 500px;
+}
+
+/* Calculator Styles */
+.calculator {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px var(--shadow);
+}
+
+.previous-operand {
+    color: var(--text-muted);
+    font-size: 1rem;
+    min-height: 1.5rem;
+    word-wrap: break-word;
+}
+
+.current-operand {
+    color: var(--text-main);
+    font-size: 2.5rem;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: var(--btn-bg);
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--text-main);
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+.operator {
+    background-color: #ffeedb;
+    color: #d97706;
+    font-weight: bold;
+}
+
+.operator:hover {
+    background-color: #ffd8a8;
+}
+
+.equals {
+    background-color: var(--btn-accent);
+    color: white;
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background-color: var(--btn-accent-hover);
+}
+
+.clear {
+    background-color: #ffe3e3;
+    color: #c92a2a;
+    font-weight: bold;
+}
+
+.clear:hover {
+    background-color: #ffc9c9;
+}
 .history-panel {
     width: 250px;
     display: flex;
@@ -64,4 +178,4 @@
 .history-list::-webkit-scrollbar-thumb {
     background: var(--text-muted);
     border-radius: 5px;
-}
+}    

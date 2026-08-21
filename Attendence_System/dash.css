@@ -1,0 +1,25 @@
+*{
+    font-family:poppins, sans-serif;
+
+}
+.menu-bar{
+    left:10px;
+    
+}
+
+.menu-btn{
+    color:black;
+    text-decoration:none;
+    box-shadow:none;
+    border:none;
+    width:500px;
+
+
+}
+
+.menu-btn:hover{
+    border:none;
+    background-color:rgb(208, 27, 27);
+    border-radius:5px;
+    
+}
